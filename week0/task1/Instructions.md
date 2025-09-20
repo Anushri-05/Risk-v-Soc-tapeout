@@ -6,10 +6,10 @@ This task covers the installation of **Yosys**, **Icarus Verilog**, and **GTKWav
 
 ## ✅ System Configuration
 - Oracle VirtualBox
-- Ubuntu 20.04 LTS
-- RAM: 6 GB
-- HDD: 50 GB
-- CPU: 4 vCPUs
+- Ubuntu 24.04 LTS
+- RAM: 4 GB
+- HDD: 40 GB
+- CPU: 2 vCPUs
 
 ---
 
