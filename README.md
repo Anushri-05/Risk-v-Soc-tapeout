@@ -10,6 +10,7 @@ Each week is organized into folders, with separate subfolders for tasks.
 ---
 
 ## 📂 Repository Structure
+``` bash
 Risk-v-Soc-tapeout/
 │── week0/
 │ ├── task1/
@@ -19,3 +20,4 @@ Risk-v-Soc-tapeout/
 │ │ ├── Instructions.md # Other tool setups
 │ │ ├── screenshots/ # Tool snapshots
 │── README.md # This file
+```
