@@ -30,26 +30,32 @@ git submodule update --init
 make config-gcc
 make
 sudo make install
+```
 
-## ✅ Verify Installation:
+ ## ✅  Verify Installation:
 ```bash
 yosys -V
+```
  
 ## Install Icarus Verilog (iverilog) 
 
 ```bash
 sudo apt-get update
 sudo apt-get install iverilog -y
+```
 
 ## ✅ Verify Installation:
 ```bash
 iverilog -v
+```
 
 ## 🔹 Install GTKWave
 ```bash
 sudo apt-get update
 sudo apt-get install gtkwave -y
+```
 
 ## ✅ Verify Installation:
 ```bash
 gtkwave --version
+```
