@@ -1,6 +1,6 @@
 # week1 covers introduction to verilog RTL design and synthesis using yoysy, iverilog and gtkwave
 ## running a RTL code testbench and observe the waveform as output 
-``bash 
+```bash 
 module good_mux (input i0 , input i1 , input sel , output reg y); // 2:1 mux 
 always @ (*)
 begin
@@ -58,7 +58,7 @@ Inputs and Outputs of synthesys
 To Verify the synthesys : give the netlist which is output of synthesys and the testbench to the iverylog and oberver the waveform in gtkwake 
 
 ## commands to run synthesys in yosys 
-`` bash 
+``` bash 
 yosys // invoke the yosys tool in the terminal
 read_liberty -lib /lib/sky130_hd.lib
 read_verilog good_mux.v 
@@ -67,6 +67,6 @@ abc -liberty
 show
 write_verilog mux_netlist.v 
 write_verilog -noattr mux_netlist.v //alternate command to see the netlist file 
-
+```
 
   
