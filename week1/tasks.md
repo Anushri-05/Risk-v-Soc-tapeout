@@ -44,11 +44,11 @@ always #10 i0 = ~i0;
 always #55 i1 = ~i1;
 ```
 ## commands to get waveform
- 
+```bash
 $ iverilog good_mux.v tb_good_mux.v
 $ ./a.out
 $ gtkwave tb_good_mux.vcd
-
+```
 ## SCREENSHOT OF EXECUTION 
 
 <img width="1181" height="690" alt="Screenshot from 2025-09-27 21-22-39" src="https://github.com/user-attachments/assets/2e90334f-8784-4c30-87e4-74c45909340e" />
