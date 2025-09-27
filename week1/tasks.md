@@ -13,6 +13,7 @@ endmodule
 ```
 
 TESTBENCH 
+```bash
 `timescale 1ns / 1ps
 module tb_good_mux;
         // Inputs
@@ -41,6 +42,7 @@ module tb_good_mux;
 always #75 sel = ~sel;
 always #10 i0 = ~i0;
 always #55 i1 = ~i1;
+```
 
 ## SCREENSHOT OF EXECUTION 
 
