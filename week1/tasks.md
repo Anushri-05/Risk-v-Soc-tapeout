@@ -55,16 +55,24 @@ $ gtkwave tb_good_mux.vcd
 
 
 ## LOGIC SYNTHESYS USING TOOL YOSYS 
-INTRODUCTION :
-What is synthesys -- the process of converting RTL code to gate level netlist. 
+### INTRODUCTION :
+1. What is synthesys?
+-  the process of converting RTL code to gate level netlist using the standard-cell library of a target technology,
+   while meeting given timing, area, and power constraints.
 * the design is converted into gates and the connections are made between the gates, this is given out as a file called Netlist.
-Inputs and Outputs of synthesys
-
-
-
-
-To Verify the synthesys : give the netlist which is output of synthesys and the testbench to the iverylog and oberver the waveform in gtkwake 
-
+- Input → RTL code + constraints (.sdc) + technology library (.lib).
+- Output → Gate-Level Netlist (GLN) + reports (timing, area, power).
+2. why synthesis is important ?
+   - During synthesis, the tool tries to meet design goals like timing area and power.
+   - Reports from synthesis (PPA) tell whether a design can realistically meet its performance target.
+   - Also Synthesis maps it to a specific standard-cell library, This ensures the design works on the chosen technlogy (because RTL design is technology independent).
+   - This ensures no mismatch between intended behavior (RTL) and actual gates.
+3. Pre-synthesis
+   - Focus is on verifying functionality. The inputs are RTL code and testbench and output is seen in the form of waveform.
+4. Post-synthesis
+   - This is carried out after synthesis where the input is gate level netlist mapped to a technology library.
+   - the design is verified through gate-level simulation and analyzed for timing, area, and power to ensure that the synthesized implementation matches the intended RTL functionality and meets design constraints. 
+  
 ## commands to run synthesys in yosys 
 ``` bash 
 yosys // invoke the yosys tool in the terminal
